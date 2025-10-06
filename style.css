@@ -1,9 +1,10 @@
 *{
  background-color: white;
-    margin: 0;
+ margin: 0;
 
 }
 
+/* vertical nevigation bar */
 #vernav {
  border-right: 0.5px solid gray;
  height: 100vh;
@@ -12,16 +13,542 @@
  display: flex;
  flex-direction: column;
  justify-content: flex-start;
+ align-items: center;
+ position: fixed;
+ 
+ 
 
 }
 
 #versec1 {
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
  
 
 
 }
 
+.active {
+  background-color: rgb(227, 227, 227);
+  border-radius: 20%;
+   
+}
+
+#versub1 {
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: center;
+ height: 100%;
+ width: 100%;
+ margin-top: 2%;
+ gap: 2.5vh;
+ border-bottom: 0.2vh solid gray;
+ margin-top: 3vh;
+ padding-bottom: 3vh;
+}
+
+#versub2 {
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: center;
+ height: 100%;
+ width: 100%;
+ margin-top: 2.5vh;
+ gap: 2.5vh;
+}
+
 #versec2 {
  width: 40px;
  height: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-end;
+ margin-bottom: 2vh;
+ gap: 1.9vh;
+ margin-left: 10px;
+}
+
+.verticalnav:hover {
+  background-color: rgb(227, 227, 227);
+    border-radius: 20%;
+    fill: black;
+}
+
+.verticalnav{
+  fill: gray;
+}
+
+.verticalnav svg {
+
+
+}
+
+
+
+/* Horizontal section1 */
+
+#hornav {
+  width: 100%;
+  display: flex;
+   justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+#hordiv {
+ 
+  
+  background-color: #eeeeee;
+   margin-left: 90px;
+   border-radius: 50%;
+   height: 38px;
+   width: 100%;
+   display: flex;
+   
+  
+
+}
+
+#sear1 {
+  background-color: #eeeeee;
+  border-top-left-radius: 50%;
+
+}
+
+.horinav {
+  border-style: none;
+  background-color:inherit;
+  fill: gray;
+
+}
+
+.horinav:hover {
+  fill: black;
+}
+
+
+#hordiv:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+#hordiv:focus-within  {
+  background-color: white;
+}
+
+
+
+
+#inpt1 {
+  width: 100%;
+  height: 38px;
+  border-style: none;
+  background-color:inherit;
+  font-size: 16px;
+
+}
+
+#inpt1:focus-within {
+  border:1px solid gray;
+  outline: none;
+}
+
+#btn1 {
+  background-color: inherit;
+  border-top-left-radius: 50%;
+  height: 38px;
+  width: 40px;
+  flex-shrink: 0;
+  border-bottom-left-radius: 50%;
+   cursor: pointer;
+}
+
+#btn2 {
+  background-color: inherit;
+  border-top-right-radius: 50%;
+  height: 38px;
+  width: 40px;
+  flex-shrink: 0;
+  border-bottom-right-radius: 50%;
+   cursor: pointer;
+
+}
+
+#get{
+  margin-left: 30px;
+  text-decoration: none;
+  color: black;
+  height: 32px;
+  width: 121px;
+  font-size: 14px;
+  padding-top: 8px;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+#login{
+  margin-right: 12px;
+  text-decoration: none;
+  color: #767676;
+  height: 32px;
+  width: 65px;
+  font-size: 14px;
+  padding-top: 8px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+#login:hover {
+  color: black;
+  cursor: pointer;
+}
+ #btn3 {
+   margin-right: 25px; 
+  height: 32px;
+  width: 150px;
+  background-color: white;
+  color: #767676;
+   border-radius: 8px; 
+  font-size: 14px;
+  flex-shrink: 0;
+  border: 1px solid rgb(183, 183, 183);
+} 
+
+#btn3:hover {
+  color: black;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+
+/* Horizontal section2 */
+#horsec2 {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-bottom: 0.5px solid rgb(162, 162, 162);
+  
+}
+
+#featured {
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 90px;
+  text-decoration: none;
+  color: black;
+  height: 35px;
+  margin-top: 15px;
+  border-bottom: 3px solid black;
+  
+}
+
+.horsec2 {
+  font-size: 16px;
+  margin-left: 30px;
+  text-decoration: none;
+  color: gray;
+  height: 35px;
+  margin-top: 15px;
+}
+
+.horsec2:hover {
+  color: black;
+  cursor: pointer;
+}
+
+/* horizontal section3 */
+#horsec3 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  width: 100%;
+  height: 320px;
+}
+
+#horsec3r {
+  margin-left: 80px;
+  width: 100%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-right: 15px;
+ 
+}
+
+#horsec3r1 {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+@media (min-width:1000px) and (max-width: 1200px) {
+  #horsec3r1 {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+}
+
+#horsec3r1p1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 10px;
+}
+
+#horsec3r1p2 {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 5px;
+}
+
+#horsec3r1p3 {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 2px;
+}
+
+#horsec3r1p4 {
+  font-size: 14px;
+  color: black;
+  margin-bottom: 2px;
+}
+
+#horsec3r2 {
+  background-color: #eeeeee;
+   border-radius: 50%;
+   height: 55px;
+   width: 100%;
+   display: flex;
+}
+
+#horsec3r2:hover {
+  background-color: #e0e0e0;
+  cursor: pointer;
+}
+
+
+.horsec3rsear {
+  border-style: none;
+  background-color: inherit;
+  fill: gray;
+
+}
+
+.horsec3rsear:hover {
+  background-color: inherit;
+  fill: black;
+}
+
+#horsec3r2:focus-within  {
+  background-color: white;
+}
+
+
+
+#horsec3inpt1 {
+  width: 100%;
+  height: 55px;
+  border-style: none;
+  background-color: inherit;
+  font-size: 16px;
+
+}
+
+#horsec3inpt1:focus {
+  border:1px solid gray;
+  outline: none;
+}
+
+#horsec3btn1 {
+  background-color: inherit;
+  border-top-left-radius: 30%;
+  height: 55px;
+  width: 40px;
+  flex-shrink: 0;
+  border-bottom-left-radius: 30%;
+   cursor: pointer;
+}
+
+#horsec3btn2 {
+  background-color: inherit;
+  border-top-right-radius: 30%;
+  height: 55px;
+  width: 40px;
+  flex-shrink: 0;
+  border-bottom-right-radius: 30%;
+   cursor: pointer;
+
+}
+
+@media (max-width: 1000px) {
+  #horsec3m {
+    display: none;
+  }
+}
+
+
+
+#horsec3m {
+
+width: 650px;
+height: 270px;
+border: 0.9px solid gray;
+border-radius: 5%;
+margin-left: 15px;
+margin-right: 15px;
+}
+
+#horsec3m1 {
+  margin-top: 20px;
+  margin-left: 20px;
+  scale: 1.5;
+}
+
+#horsec3m2 {
+  margin-top: 25px;
+  margin-left: 15px;
+}
+
+#horsec3m3 {
+  margin-top: 3px;
+  margin-left: 15px;
+  color: #111111;
+}
+
+#horsec3m4 {
+  margin-top: 3px;
+  margin-left: 15px;
+  color: gray;
+}
+
+#horsec3m5{
+  margin-top: 80px;
+  margin-left: 15px;
+  border-radius: 5%;
+  border-style: none;
+  background-color: black;
+  color: white;
+  height: 35px;
+  width: 180px;
+}
+
+#horsec3m5:hover {
+  background-color: rgb(174, 209, 146);
+  color: black;
+  cursor: pointer;
+}
+
+
+
+#horsec3l {
+background-image: url(../../Screenshot/screenshot23.png);
+background-size: contain;
+width: 600px;
+height: 270px;
+margin-right: 30px;
+margin-left: 15px;
+border-radius: 5%;
+}
+
+#horsec3lp1 {
+  font-size: 22px;
+  font-weight: 500;
+  color: white;
+  margin-top: 90px;
+  margin-left: 30px;
+  background: none;
+}
+
+#horsec3lp2 {
+  font-size: 16px;
+  color: white;
+  margin-top: 10px;
+  margin-left: 30px;
+  background: none;
+}
+
+#horsec3lp3 {
+  font-size: 16px;
+  color: white;
+  margin-top: 5px;
+  margin-left: 30px;
+  background: none;
+}
+
+#horsec3lp4 {
+  font-size: 16px;
+  color: white;
+  margin-top: 5px;
+  margin-left: 90px;
+  background: none;
+}
+
+
+
+/* Horizontal section4 */
+#horsec4big {
+  width: calc(100% - 75px);
+  margin-top: 60px;
+  margin-left: 75px;
+  flex-direction: row;
+  
+}
+
+#horsec4small {
+  width: calc(100% - 75px);
+  margin-top: 60px;
+  margin-left: 75px;  
+  flex-direction: row;
+  
+}
+
+@media (min-width:950px) {
+  #horsec4big { display: flex; }
+  #horsec4small { display: none; }
+} 
+
+@media (max-width:950px) {
+  #horsec4big { display: none; }
+  #horsec4small { display: flex; }
+}
+
+
+#horsec4r {
+ margin-left: 1%;
+ width: 31%;
+ margin-right: 2%;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ gap: 20px;
+ 
+}
+
+#horsec4m {
+ width: 31%;
+ margin-right: 2%;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ gap: 20px;
+ 
+}
+
+#horsec4l {
+ width: 31%;
+ margin-right: 2%;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ gap: 20px;
 }
